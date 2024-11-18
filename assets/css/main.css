@@ -1601,3 +1601,132 @@ section,
   text-decoration: none;
 }
 
+.btn-download {
+  position: absolute;
+  bottom: 25px; /* Adjust position as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #443a384b; /* Button color */
+  color: white;
+  padding: 15px 30px;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 50px; /* Rounded corners */
+  transition: background-color 0.3s ease;
+  z-index: 10;
+}
+
+.btn-download:hover {
+  background-color: #352f2f7e; /* Button hover color */
+}
+/* .social-links a {
+  margin: 0 10px;
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  color: #ff5733; 
+} */
+
+/* Gallery Section */
+#gallery {
+  background-color: #121212;
+  padding: 60px 0;
+  color: #fff;
+}
+
+#gallery .section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #f39c12;
+}
+
+.gallery-item {
+  margin-bottom: 30px;
+}
+
+.gallery-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* Modal Styling */
+.modal-content {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.modal img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Close Button */
+.btn-close {
+  background-color: #f39c12;
+  border: none;
+  padding: 10px;
+  font-size: 20px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 50%;
+  color: white;
+}
+
+.btn-close:hover {
+  background-color: #e67e22;
+}
+/* Hero Section */
+.hero {
+  position: relative;
+  overflow: hidden;
+  background-color: #333; /* Dark background */
+}
+
+/* Marquee Container for Images */
+.hero-img-marquee {
+  display: flex;
+  gap: 20px; /* Space between images */
+  animation: marquee 30s linear infinite; /* Marquee scrolling effect */
+}
+
+/* Individual Hero Images */
+.hero-img {
+  height: auto; /* Maintain original height */
+  width: auto; /* Maintain original width */
+  object-fit: contain; /* Ensure images retain their aspect ratio */
+  padding: 10px; /* Padding between images */
+}
+
+/* Marquee Animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0); /* Start position */
+  }
+  100% {
+    transform: translateX(-100%); /* End position */
+  }
+}
+
+/* Adding a duplicate set of images for smooth looping */
+.hero-img-marquee::after {
+  content: '';
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  /* Copy the images to create a seamless loop */
+  visibility: hidden;
+}
