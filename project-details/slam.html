@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>V-SLAM: Mapping & Localization</title>
+  <meta name="description" content="Detailed explanation, findings, methodologies, and conclusions of the V-SLAM project.">
+  <meta name="keywords" content="V-SLAM, Robotics, Localization, Mapping, Monocular Camera, ROS">
+
+  <!-- Favicons -->
+  <link href="../assets/img/logo.png" rel="icon">
+  <link href="../assets/img/logo.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="../assets/css/main.css" rel="stylesheet">
+  <style>
+    .project-image {
+      width: 100%;
+      height: 100%;
+      max-height: 300px; /* Adjust height as needed */
+      object-fit: contain;
+      margin-bottom: 20px;
+    }
+    .robot-image {
+      width: auto;
+      height: 80%;
+      max-height: 300px; /* Adjust height as needed */
+      object-fit: contain;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body class="portfolio-details-page">
+  <!-- <script src="https://cdn.jsdelivr.net/npm/purecounterjs@1.0.1/dist/purecounter_vanilla.js"></script> -->
+
+
+  <!-- Header -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <a href="../index.html" class="logo d-flex align-items-center">
+        <img src="../assets/img/logo.png" alt="">
+        <!-- <h1 class="sitename">VSLAM</h1> -->
+      </a>
+      <!-- <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../projects.html" class="active">Projects</a></li>
+          <li><a href="../publications.html">Publications</a></li>
+          <li><a href="../gallery.html">Gallery</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav> -->
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="container">
+        <div class="row d-flex justify-content-center text-justify">
+          <div class="col-lg-10">
+            <h1>Visual SLAM: Mapping & Localization of Mobile Robots</h1>
+            <p>Utilizing monocular cameras and ROS for robust mapping and precise localization.</p>
+          </div>
+        </div>
+      </div>
+      <nav class="breadcrumbs">
+        <div class="container">
+          <ol>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../projects.html">Projects</a></li>
+            <li class="current">V-SLAM</li>
+          </ol>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+
+          <!-- Left Column -->
+          <div class="col-lg-8">
+            <div class="portfolio-image-container">
+              <img src="../assets/img/Robot.png" alt="Robot" class="project-image">
+              
+            </div>
+          </div>
+          <!-- <div class="col-lg-4">
+            <div class="portfolio-image-container">
+              <img src="../assets/img/robot_model.png" alt="Mapping" class="robot-image">            
+            </div>
+          </div> -->
+          
+          <!-- Right Column -->
+          <div class="col-lg-4">
+            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+              <h3>Project Information</h3>
+              <ul>
+                <!-- <li><strong>Category:</strong> Robotics</li> -->
+                <!-- <li><strong>Date:</strong> March 2023</li> -->
+                <li><strong>Keywords:</strong> Robot Perception,Machine Vision, Active Perception, ROS2,  Sensor Interfacing</li>
+                <li><strong>Supervisor & Mentor</strong> </li>
+                <li><strong>Team:</strong> 
+                 <li><a href="../index.html">Ranish Devkota</a>,  
+                  <a href="https://gokarnabaskota.com.np">Gokarna Baskota</a>, 
+                  <a href="https://sadanandpaneru.com.np">Sadanand Paneru</a>,
+                 <a href = " ">Shuruchi Yadav</a></li>
+                </li>
+                <h4>Facility used: <a href = "https://robotics.ioepc.edu.np">Robotics club</a></h4>
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+
+        <!-- Explanation Section -->
+        <div class="project-details" data-aos="fade-up" data-aos-delay="400">
+          <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+            <h2>Project Overview</h2>
+            <p>
+              This project focuses on implementing V-slam algorothm with monocular usb camera. Project relays on Keyframe extraction as well differentials in features among adjacent features with Bundle Adjustment using the Stella VSLAM algorithm and 
+             ROS2. The Computational Offloading had been featured implementing Robot end node as well as computer end node while 
+             Raspberry pi as well as arduino was used for robot control and Ros2 implementations.
+            </p>
+          </div>
+          <h2>Explanation</h2>
+          <p>
+            V-SLAM (Visual Simultaneous Localization and Mapping) is a technique that allows a robot to build a map of its environment 
+            while simultaneously localizing itself within that map. This project utilized a monocular camera to capture visual data, 
+            which was processed in real-time using the Stella VSLAM algorithm integrated with ROS2. The algorithm works by feature extraction 
+            of keyframes and change in keyframes in adjustant images coupled with Bundle adjustjment for mapping via single Monocular camera.
+            <figure>
+              <img src="../assets/img/stella_vslam_flowchart.png" alt="VSLAM" title="Stella V-SLAM algorithm" class="project-image">
+              <figcaption>Robot-vslam Implementation </figcaption>
+            </figure>
+
+            The chosen Visual SLAM algorithm, <strong>Stella Vslam</strong>, is employed to enable the robot to autonomously navigate and understand its environment.
+             The algorithm extracts distinctive visual features from the monocular camera images, tracks them across consecutive frames, and concurrently 
+             constructs a map of the surroundings. Simultaneously, it estimates the robot's pose in real-time, providing accurate localization information. 
+             This approach is particularly advantageous for mobile robots operating in diverse and dynamic environments where traditional mapping and localization methods might be limited.
+              
+          </p>
+        </div>
+
+        <!-- Methodology Section -->
+        <div class="project-details" data-aos="fade-up" data-aos-delay="600">
+          <h2>Methodology</h2>
+          <figure>
+          <img src="../assets/img/Working of mobile robot.png" alt="Working Overview" class="project-image">
+            <figcaption>Working of Mobile Robot</figcaption>
+        </figure>
+          <p>
+            The project followed these key steps:
+          </p>
+          
+            <li> Configured a four-wheeled differential drive robot equipped with a monocular USB camera.</li>
+            <li> Integrated the Stella VSLAM algorithm with ROS to process visual data and extract features.</li>
+            <li> Implemented motion estimation and map generation through real-time feature matching and pose calculation.</li>
+            <li> Calibrated the camera for accurate depth perception and reduced distortion.</li>
+          
+          <div class="col-lg-8">
+            <div class="portfolio-image-container">
+              <figure>
+              <img src="../assets/img/Callibrated_image.png" alt="Mapping" class="robot-image"> 
+              <figcaption>Camera Callibration technique </figcaption>  
+            </figure>         
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Results Section -->
+        <div class="project-details" data-aos="fade-up" data-aos-delay="700">
+          <h2>Results</h2>
+          <div class="row gy-4">
+          <div class="col-lg-6">
+            <div class="portfolio-image-container">
+              <figure>
+              <img src="../assets/img/feature_extraction_for_mapping (1).png" alt="Features" class="project-image">
+              <figcaption>Features Extraction</figcaption>
+            </figure>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="portfolio-image-container">
+              <figure>
+              <img src="../assets/img/localization.png" alt="Localization Results" class="project-image">
+              <figcaption>Mapping & Localization</figcaption>
+            </figure>
+            </div>
+          </div>
+        </div>
+          <p>
+            The robot successfully mapped indoor environments with significant accuracy. The Localization had been performed in mapped environment as well as 
+            capable of performing SLAM taskes with single camera. The system demonstrated minimal drift 
+            and robust performance in dynamic conditions, such as changing lighting and obstacles.
+          </p>
+        </div>
+        <!-- Key Findings Section -->
+        <div class="project-details" data-aos="fade-up" data-aos-delay="500">
+          <h2>Key Findings</h2>
+          
+            <li>Monocular cameras provide a cost-effective alternative to expensive LIDAR sensors for SLAM applications.</li>
+            <li>The Stella VSLAM algorithm demonstrated high robustness in both textured and texture-less environments.</li>
+            <li>ROS integration allowed efficient processing and visualization using RViz.</li>
+        
+        </div>
+        <!-- Conclusion Section -->
+        <div class="project-details" data-aos="fade-up" data-aos-delay="800">
+          <h2>Conclusion</h2>
+          <p>
+            This V-SLAM implementation proved effective for autonomous mobile robots, offering a cost-efficient alternative to traditional 
+            LIDAR-based systems. Future improvements includes
+            <li> integrating stereo cameras for depth perception</li>
+            <li>Sensor Fusion such as IMUS as well as GPS</li> 
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+    <!-- <div class="container">
+      <h3 class="sitename">Personal</h3>
+      <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
+      <div class="social-links d-flex justify-content-center">
+        <a href=""><i class="bi bi-twitter-x"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-skype"></i></a>
+        <a href=""><i class="bi bi-linkedin"></i></a>
+      </div> -->
+      <div class="container">
+        <div class="copyright">
+          <span>Copyright ©</span><strong class="px-1 sitename">Ranish</strong>
+          <p>
+            <span>Last Updated on </span> <strong>19 NOV 2023</strong>
+          </p>
+        </div>
+        <!-- <div class="credits"> -->
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you've purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+          <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+        <!-- </div> -->
+      </div>
+    </div>
+  </footer>
+  <!-- Scroll to Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/purecounterjs@1.0.1/dist/purecounter_vanilla.js"></script>
+  <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>

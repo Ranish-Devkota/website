@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>TWSBR</title>
+  <meta name="description" content="Detailed explanation, findings, methodologies, and conclusions of the V-SLAM project.">
+  <meta name="keywords" content="V-SLAM, Robotics, Localization, Mapping, Monocular Camera, ROS">
+
+  <!-- Favicons -->
+  <link href="../assets/img/logo.png" rel="icon">
+  <link href="../assets/img/logo.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="../assets/css/main.css" rel="stylesheet">
+  <style>
+    .project-image {
+      width: 100%;
+      height: 100%;
+      max-height: 300px; /* Adjust height as needed */
+      object-fit: contain;
+      margin-bottom: 20px;
+    }
+    .robot-image {
+      width: auto;
+      height: 80%;
+      max-height: 300px; /* Adjust height as needed */
+      object-fit: contain;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body class="portfolio-details-page">
+  <!-- <script src="https://cdn.jsdelivr.net/npm/purecounterjs@1.0.1/dist/purecounter_vanilla.js"></script> -->
+
+
+  <!-- Header -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <a href="../index.html" class="logo d-flex align-items-center">
+        <img src="../assets/img/logo.png" alt="">
+        <!-- <h1 class="sitename">VSLAM</h1> -->
+      </a>
+      <!-- <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../projects.html" class="active">Projects</a></li>
+          <li><a href="../publications.html">Publications</a></li>
+          <li><a href="../gallery.html">Gallery</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav> -->
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="container">
+        <div class="row d-flex justify-content-center text-justify">
+          <div class="col-lg-10">
+            <h2>Mathematical Modelling , Simulation and Validation of Two wheeled self balancing robot</h2>
+            <p>An Analytical and Experimental Approaches</p>
+          </div>
+        </div>
+      </div>
+      <nav class="breadcrumbs">
+        <div class="container">
+          <ol>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../projects.html">Projects</a></li>
+            <li class="current">TWSBR</li>
+          </ol>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+
+          <!-- Left Column -->
+          <div class="col-lg-8">
+            <div class="portfolio-image-container">
+              <img src="../assets/img/balancing_bot.jpg" alt="Robot" class="project-image">
+              
+            </div>
+          </div>
+          <!-- <div class="col-lg-4">
+            <div class="portfolio-image-container">
+              <img src="../assets/img/robot_model.png" alt="Mapping" class="robot-image">            
+            </div>
+          </div> -->
+          
+          <!-- Right Column -->
+          <div class="col-lg-4">
+            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+              <h3>Project Information</h3>
+              <ul>
+                <!-- <li><strong>Category:</strong> Robotics</li> -->
+                <!-- <li><strong>Date:</strong> March 2023</li> -->
+                <li><strong>Keywords:</strong> Mathematical Modelling ,System identification, Control system design, Robot fabrication & Validation</li>
+                <li><strong>Supervisor & Mentor: </strong><a href="https://www.researchgate.net/profile/Deependra-Neupane/research">Asst Prof. Deependra Neupane</a> </li>
+                <li><strong>Team:</strong> 
+                 <li><a href="../index.html">Ranish Devkota</a>,  
+                  <a href="https://gokarnabaskota.com.np">Gokarna Baskota</a>, 
+                  <a href="https://sadanandpaneru.com.np">Sadanand Paneru</a>
+                 <!-- <a href = " ">Shuruchi Yadav</a></li> -->
+                </li>
+                <h5>Facility used: <a href = "https://robotics.ioepc.edu.np">Robotics club</a></h5>
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+
+        <!-- Explanation Section -->
+        <div class="project-details" data-aos="fade-up" data-aos-delay="400">
+          <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+            <h2>Project Overview</h2>
+            <p>
+                The main Idea of this project revolves around the classical problem of Balancing inverted pendulum with active controller design.
+              This project focuses on Mathematical Modelling of the components used , Design of PID Controller with identified system in Matlab and Implementing the designed controller 
+              in modelled robot to give comparative analogy and proof of system identification as well as stable control design.
+            </p>
+          </div>
+          <h2>Methodology</h2>
+          <p>
+            Mathematical modelling of the major components of the system had been done both via classical techniques of 
+            as well as modern Data driven approaches. 
+            <li>PMDC Modelling</li> The Data driven approaches had been deployed for modelling the PMDC where the output of 
+            PMDC <strong>Motor speed</strong> was logged with the tacheometer. Thus these datas are then used for modelling the second order 
+            Transfer function with SGD followed by Control system toolbox. The model was cross validated for accuracy.
+
+            <li>Driver & Sensor modelling</li> The driver & sensor both are modelled in realm of first order accounting their delays and gains to get relavent 
+            transfer functions.
+            <li>Chassis modelling</li> The chassis had been modelled classically with the Vector components and Resolution to account dynamics of systems. 
+                
+            <div class="row gy-4">
+                <div class="col-lg-6">
+                    <div class="portfolio-image-container">
+                        <figure>
+                            <img src="../assets/img/Figure 8 Optical Tachometer (2).jpg" alt="Features" class="project-image">
+                            <figcaption>Optical tacheometer</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                     <div class="portfolio-image-container">
+                        <figure>
+                            <img src="../assets/img/Figure 12 Experimental setup for verifying the estimated transfer function of motor with motor-generator set(b)back-emf.jpeg" alt="Localization Results" class="project-image">
+                            <figcaption>Experimental set of motor-generator Set</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                
+                The system design plays crutual role as identifying the components as well as tuning controller plays crutial role. 
+                The controller design was done as a closed loop of controller followed by Zero order Hold symbolizing the 
+                sample time of controller whereas the o/p of controller fed to driver transfer function , Moder TF , Chassis Tf where o/p is observed
+                whereas the closed loop is deployed with sensor in feedback symbolizing the delay in the state of given and observed state.
+                The simulation environment should be done with inclusion of the noises symbolizing distrubances.
+
+                The Tuning of PID had been done with the system being stable after controller's satisfying performance 
+                <div class="portfolio-image-container">
+                    <figure>
+                        <img src="../assets/img/Figure 27 Simulated robot position and angle.png" alt="Localization Results" class="project-image">
+                        <figcaption>Simulated responses</figcaption>
+                    </figure>
+                </div>
+                After modelling & validation for TF of Components , Robot fabrication is done with Arduino as controller , DC motor as actuator, Wooden 2 storyed frame , L298N Driver and MPU6050 as IMU 
+                which was powered by 12 V LiPo battery. The PID controller is implemented within arduino as software implementation. 
+                
+                The PID controller had been used to continuously generate adaquate amount of the motor torque in correct direction 
+                thus avoiding the falling of robot.
+        
+
+        </p>
+        </div>
+
+        <!-- Methodology Section -->
+        <!-- <div class="project-details" data-aos="fade-up" data-aos-delay="600">
+          <h2></h2>
+          <figure>
+          <img src="../assets/img/Working of mobile robot.png" alt="Working Overview" class="project-image">
+            <figcaption>Working of Mobile Robot</figcaption>
+        </figure>
+          <p>
+            The project followed these key steps:
+          </p>
+          
+            <li> Configured a four-wheeled differential drive robot equipped with a monocular USB camera.</li>
+            <li> Integrated the Stella VSLAM algorithm with ROS to process visual data and extract features.</li>
+            <li> Implemented motion estimation and map generation through real-time feature matching and pose calculation.</li>
+            <li> Calibrated the camera for accurate depth perception and reduced distortion.</li>
+          
+          <div class="col-lg-8">
+            <div class="portfolio-image-container">
+              <figure>
+              <img src="../assets/img/Callibrated_image.png" alt="Mapping" class="robot-image"> 
+              <figcaption>Camera Callibration technique </figcaption>  
+            </figure>         
+            </div>
+          </div>
+
+        </div> -->
+
+        <!-- Results Section -->
+        <div class="project-details" data-aos="fade-up" data-aos-delay="700">
+          <h2>Results</h2>
+          <div class="row gy-4">
+          <div class="col-lg-6">
+            <div class="portfolio-image-container">
+              <figure>
+              <img src="../assets/img/Figure 28 Real angle of tilt of two wheeled self-balancing robot.png" alt="Features" class="project-image">
+              <figcaption>Real Robot angle of tilt</figcaption>
+            </figure>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="portfolio-image-container">
+              <figure>
+              <img src="../assets/img/Figure 27 Simulated robot position and angle.png" alt="Localization Results" class="project-image">
+              <figcaption>Comparision between real and simulated angle of tilt</figcaption>
+            </figure>
+            </div>
+          </div>
+        </div>
+          <p>
+            The robot was Balanced and from the result it is clear that the modelling had been quite successful as both ar in close cohision. 
+            The tunung as well as randomness in the environmental conditions make the controller design challanging , however irrespective of the 
+            forces, robot stand still signifying the system design successful. 
+          </p>
+        </div>
+        <!-- Key Findings Section -->
+        <!-- <div class="project-details" data-aos="fade-up" data-aos-delay="500">
+          <h2>Key Findings</h2>
+          
+            <li>Monocular cameras provide a cost-effective alternative to expensive LIDAR sensors for SLAM applications.</li>
+            <li>The Stella VSLAM algorithm demonstrated high robustness in both textured and texture-less environments.</li>
+            <li>ROS integration allowed efficient processing and visualization using RViz.</li>
+        
+        </div> -->
+        <!-- Conclusion Section -->
+        <div class="project-details" data-aos="fade-up" data-aos-delay="800">
+          <h2>Conclusion</h2>
+          <p>
+            The analytical and experimental approaches gives both quality of the real world system limitations as well as ability for control and
+            make inheriently unstable system stable. The significance of system identification as well as mathematical design is demonstrated as the 
+            effective inclision of simulations could have been done. 
+            however there are certain limitations such as:
+            <li> System had been liniarized indicating controller is ineffective if the angle of tilt is greater than 10 degree</li>
+            <li>Sensor carrys lots of noise which trigger false input.</li> 
+            </li>optimal controller shall make it more robost and realizable.</li>
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+    <!-- <div class="container">
+      <h3 class="sitename">Personal</h3>
+      <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
+      <div class="social-links d-flex justify-content-center">
+        <a href=""><i class="bi bi-twitter-x"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-skype"></i></a>
+        <a href=""><i class="bi bi-linkedin"></i></a>
+      </div> -->
+      <div class="container">
+        <div class="copyright">
+          <span>Copyright ©</span><strong class="px-1 sitename">Ranish</strong>
+          <p>
+            <span>Last Updated on </span> <strong>19 NOV 2023</strong>
+          </p>
+        </div>
+        <!-- <div class="credits"> -->
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you've purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+          <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+        <!-- </div> -->
+      </div>
+    </div>
+  </footer>
+  <!-- Scroll to Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/purecounterjs@1.0.1/dist/purecounter_vanilla.js"></script>
+  <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>

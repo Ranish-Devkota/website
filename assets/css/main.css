@@ -1376,7 +1376,43 @@ section,
 # Starter Section Section
 --------------------------------------------------------------*/
 .starter-section {
-  /* Add your styles here */
+  background-color: #1a1a1a; /* Dark background for contrast */
+  color: #ffffff; /* Light text color for readability */
+  padding: 60px 20px; /* Vertical and horizontal padding */
+  text-align: center; /* Center align content */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+  margin: 20px auto; /* Add space around the section and center it */
+  max-width: 800px; /* Set a maximum width for better layout */
+}
+
+.starter-section h1 {
+  font-size: 36px; /* Large heading size */
+  font-weight: 700; /* Bold heading */
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+.starter-section p {
+  font-size: 18px; /* Slightly larger paragraph font */
+  line-height: 1.6; /* Improved line spacing */
+  margin-bottom: 30px; /* Space below the paragraph */
+}
+
+.starter-section .btn-primary {
+  display: inline-block; /* Inline button with padding */
+  background-color: #4CAF50; /* Primary button color (green) */
+  color: #fff; /* White text */
+  padding: 12px 25px; /* Padding inside the button */
+  font-size: 16px; /* Button font size */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth background transition */
+  text-decoration: none; /* Remove underline from link buttons */
+}
+
+.starter-section .btn-primary:hover {
+  background-color: #45a049; /* Slightly darker green on hover */
+  color: #fff; /* Ensure text remains white */
 }
 
 /*--------------------------------------------------------------
@@ -1730,3 +1766,92 @@ section,
   /* Copy the images to create a seamless loop */
   visibility: hidden;
 }
+
+.project-description, .methodology, .team, .results, .updates {
+  margin-bottom: 30px;
+  background-color: #1e1e1e; /* Slightly lighter dark background for sections */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.project-description img, .methodology img, .results img {
+  display: block;
+  margin: 20px auto;
+  max-width: 90%;
+  height: auto;
+  border: 1px solid #444;
+  border-radius: 5px;
+}
+
+h2 {
+  color: #fff; /* White color for headers */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 10px 0;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #66ccff; /* Light blue links for contrast */
+}
+
+ul li a:hover {
+  text-decoration: underline;
+}
+
+.project-description, .methodology, .results {
+  border-left: 5px solid #66ccff; /* Accent color on the left for emphasis */
+}
+
+.footer a {
+  color: #66ccff; /* Link color in the footer */
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+.portfolio-image-container {
+  display: flex;
+  flex-direction: column; /* Stack images vertically */
+  align-items: center;    /* Center images horizontally */
+  gap: 20px;              /* Space between images */
+}
+
+.project-image {
+  width: 100%;            /* Make images responsive */
+  height: auto;
+  max-height: 400px;      /* Limit the maximum height */
+  object-fit: contain;    /* Ensure the whole image is visible */
+  border-radius: 8px;     /* Optional: Add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+.image-container {
+  text-align: center; /* Center the image and label */
+  margin: 20px 0;     /* Add space above and below */
+}
+
+.image-label {
+  margin-top: 8px;          /* Space between image and label */
+  font-size: 16px;          /* Set label font size */
+  color: #555;              /* Label color */
+  font-weight: bold;        /* Make the label bold */
+}
+figure {
+  text-align: center; /* Center-aligns the entire content of the figure */
+  margin: 20px 0;     /* Adds space above and below the figure */
+}
+
+figcaption {
+  margin-top: 10px;   /* Space between the image and the label */
+  font-size: 16px;    /* Set label font size */
+  color: #555;        /* Label color */
+  font-weight: bold;  /* Makes the label bold */
+}
+

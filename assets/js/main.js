@@ -123,7 +123,11 @@
   /**
    * Initiate Pure Counter
    */
-  new PureCounter();
+  if (typeof PureCounter !== 'undefined') {
+    new PureCounter();
+  } else {
+    console.warn('PureCounter is not loaded.');
+  }
 
   /**
    * Animate the skills items on reveal
