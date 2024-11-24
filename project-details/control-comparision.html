@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Control Comparision</title>
+  <meta name="description" content="Comparision of control ">
+  <meta name="keywords" content="PID, LQR, Optimal control, Control & System">
+
+  <!-- Favicons -->
+  <link href="../assets/img/logo.png" rel="icon">
+  <link href="../assets/img/logo.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="../assets/css/main.css" rel="stylesheet">
+  <style>
+    .project-image {
+      width: 100%;
+      height: 100%;
+      max-height: 300px; /* Adjust height as needed */
+      object-fit: contain;
+      margin-bottom: 20px;
+    }
+    .robot-image {
+      width: auto;
+      height: 80%;
+      max-height: 300px; /* Adjust height as needed */
+      object-fit: contain;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body class="portfolio-details-page">
+  <!-- <script src="https://cdn.jsdelivr.net/npm/purecounterjs@1.0.1/dist/purecounter_vanilla.js"></script> -->
+
+
+  <!-- Header -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <a href="../index.html" class="logo d-flex align-items-center">
+        <img src="../assets/img/logo.png" alt="">
+        <!-- <h1 class="sitename">VSLAM</h1> -->
+      </a>
+      <!-- <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../projects.html" class="active">Projects</a></li>
+          <li><a href="../publications.html">Publications</a></li>
+          <li><a href="../gallery.html">Gallery</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav> -->
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="container">
+        <div class="row d-flex justify-content-center text-justify">
+          <div class="col-lg-10">
+            <h2>Simulation and Comparison Between Controls for Two-Wheeled Self-Balancing Robot</h2>
+            <p>Analyzing PID and LQR Controllers in Matlab/simulink</p>
+          </div>
+        </div>
+      </div>
+      <nav class="breadcrumbs">
+        <div class="container">
+          <ol>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../projects.html">Projects</a></li>
+            <li class="current">Control-comparision</li>
+          </ol>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+
+          <!-- Left Column -->
+          <div class="col-lg-8">
+            <div class="portfolio-image-container">
+              <img src="../assets/img/comparision of controls.jpg" alt="Robot" class="project-image">
+              
+            </div>
+          </div>
+          <!-- <div class="col-lg-4">
+            <div class="portfolio-image-container">
+              <img src="../assets/img/robot_model.png" alt="Mapping" class="robot-image">            
+            </div>
+          </div> -->
+          
+          <!-- Right Column -->
+          <div class="col-lg-4">
+            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+              <h3>Project Information</h3>
+              <ul>
+                <!-- <li><strong>Category:</strong> Robotics</li> -->
+                <!-- <li><strong>Date:</strong> March 2023</li> -->
+                <li><strong>Keywords:</strong>Self-Balancing Robot, PID, LQR, Control Systems, MATLAB/SIMULINK</li>
+                <!-- <li><strong>Supervisor & Mentor</strong> </li> -->
+                <li><strong>Team:</strong> 
+                 <li><a href="../index.html">Ranish Devkota</a>,  
+                  <a href="https://gokarnabaskota.com.np">Gokarna Baskota</a>, 
+                  <a href="https://sadanandpaneru.com.np">Sadanand Paneru</a>,
+                 <a href = " ">Shuruchi Yadav</a></li>
+                </li>
+                <!-- <h4>Facility used: <a href = "https://robotics.ioepc.edu.np">Robotics club</a></h4> -->
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+
+        <!-- Explanation Section -->
+        <div class="project-details" data-aos="fade-up" data-aos-delay="400">
+          <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+            <h2>Project Overview</h2>
+            <p>
+                This project addresses the challenge of balancing an inverted pendulum using a two-wheeled self-balancing robot. 
+                It explores various control strategies, including PID and LQR, through MATLAB/Simulink simulations along
+                with  the feasibility with studying the motor current responses since aggressive control might resulting 
+                on damages of motor due to heat resulting from surge of current in coil.
+            </p>
+          </div>
+          
+        </div>
+
+        <!-- Methodology Section -->
+        <div class="project-details" data-aos="fade-up" data-aos-delay="600">
+          <h2>Methodology</h2>
+          <!-- <figure>
+          <img src="../assets/img/Working of mobile robot.png" alt="Working Overview" class="project-image">
+            <figcaption>Working of Mobile Robot</figcaption>
+        </figure> -->
+        <!-- <h2>Methodology</h2> -->
+        <div class="row gy-4">
+            <div class="col-lg-4">
+              <figure>
+                <img src="../assets/img/pid.jpg" alt="PID Response" class="project-image">
+                <figcaption>PID Block Diagram</figcaption>
+              </figure>
+            </div>
+            <div class="col-lg-4">
+              <figure>
+                <img src="../assets/img/4-pid.jpg" alt="PID Response" class="project-image">
+                <figcaption>Aggressive PID Block Diagram</figcaption>
+              </figure>
+            </div>
+            <div class="col-lg-4">
+              <figure>
+                <img src="../assets/img/lqr.jpg" alt="LQR Response" class="project-image">
+                <figcaption>LQR Block Diagram</figcaption>
+              </figure>
+            </div>
+          </div>
+        <ul>
+          <li><strong>Mathematical Modeling:</strong> The mechanical system was modeled as an inverted pendulum on a cart, reducing degrees of freedom for analysis.</li>
+          <li><strong>DC Motor Response:</strong> Modeled using characteristics like 6V input, 0.7Ω resistance, and back EMF (0.08 V/rpm). Current and speed responses were analyzed to ensure feasibility.</li>
+          
+
+          </div>
+          <li><strong>PID Controller:</strong> Single and multi-loop PID systems were tested. Multi-loop provided enhanced stability by integrating angular and linear velocity feedback.</li>
+          <li><strong>LQR Control:</strong> An optimal controller was designed to minimize the system's cost function, balancing control effort with performance accuracy.</li>
+        </ul>
+        <div class="row gy-4">
+            <div class="col-lg-6">
+              <figure>
+                <img src="../assets/img/state.png" alt="PID Response" class="project-image">
+                <figcaption>State representation of robot</figcaption>
+              </figure>
+            </div>
+            <div class="col-lg-6">
+              <figure>
+                <img src="../assets/img/tuned_values.png" alt="LQR Response" class="project-image">
+                <figcaption>Tuned values for LQR</figcaption>
+              </figure>
+            </div>
+          </div>
+
+        <h2>Motor Analysis</h2>
+        <p><strong>Motor Specifications:</strong></p>
+        <ul>
+          <li>Input Voltage: 6V</li>
+          <li>Armature Resistance: 0.7Ω</li>
+          <li>Back EMF Constant: 0.08 V/rpm</li>
+        </ul>
+        
+        <p>
+          The motor's response was critical in assessing the feasibility of different control strategies. Current and speed characteristics were observed under various disturbances.
+        </p>
+        <div class="row gy-4">
+          <div class="col-lg-6">
+            <figure>
+              <img src="../assets/img/torque.jpg" alt="PID Response" class="project-image">
+              <figcaption>Relation between Torque(o/p) to Current</figcaption>
+            </figure>
+          </div>
+          <div class="col-lg-6">
+            <figure>
+              <img src="../assets/img/h-bridge.jpg" alt="PID Response" class="project-image">
+              <figcaption>Driving motor accordance to gate pulse as well as the relations</figcaption>
+            </figure>
+          </div>
+
+
+          <!-- <div class="col-lg-8">
+            <div class="portfolio-image-container">
+              <figure>
+              <img src="../assets/img/Callibrated_image.png" alt="Mapping" class="robot-image"> 
+              <figcaption>Camera Callibration technique </figcaption>  
+            </figure>         
+            </div>
+          </div> -->
+          <div class="row gy-4">
+            <div class="col-lg-4">
+              <figure>
+                <img src="../assets/img/pid.png" alt="PID Response" class="project-image">
+                <figcaption>PID Controller Response</figcaption>
+              </figure>
+            </div>
+            <div class="col-lg-4">
+              <figure>
+                <img src="../assets/img/4-pid-response.jpg" alt="PID Response" class="project-image">
+                <figcaption>Agressive PID Controller Response</figcaption>
+              </figure>
+            </div>
+            <div class="col-lg-4">
+              <figure>
+                <img src="../assets/img/lqr-state.png" alt="LQR Response" class="project-image">
+                <figcaption>LQR Controller Response</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <div class="row gy-4">
+            <div class="col-lg-4">
+              <figure>
+                <img src="../assets/img/motor-pid.jpg" alt="Motor Response with PID Controller" class="project-image">
+                <figcaption>Motor Response with Single PID Controller</figcaption>
+              </figure>
+            </div>
+            <div class="col-lg-4">
+              <figure>
+                <img src="../assets/img/4-pid motor response.jpg" alt="PID Response" class="project-image">
+                <figcaption>Agressive PID Motor Response</figcaption>
+              </figure>
+            </div>
+            <div class="col-lg-4">
+              <figure>
+                <img src="../assets/img/lqr_motor.jpg" alt="Motor Response with LQR Controller" class="project-image">
+                <figcaption>Motor Response with LQR Controller</figcaption>
+              </figure>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Results Section -->
+        <div class="project-details" data-aos="fade-up" data-aos-delay="700">
+            <div class="container">
+          <!-- <h2>Results</h2> -->
+          <h2>Results</h2>
+        <p>
+          <strong>PID Controllers:</strong>  PID stabilized the robot but resulted in continuous motion to compensate for disturbances. 
+          Contrastingly, Agressive pid capable of stabilizing the position in closed confinement, however suffers from high  transient motor current which might be fatal.
+        </p>
+        
+        <p>
+          <strong>LQR Controller:</strong> Achieved superior performance with lower energy consumption and smoother motor response. Current spikes were reduced, and the system remained stable under varying disturbances.
+        </p>
+        </div>
+        <div class="project-details" data-aos="fade-up" data-aos-delay="700">
+            <div class="container">
+        <h2>Conclusion</h2>
+        <p>
+          The LQR controller demonstrated optimal performance, balancing the robot efficiently with minimal energy usage. Future work includes real-world validation and noise reduction for enhanced robustness.
+        </p> 
+    </div>
+        </div> 
+    </div>      
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+    <!-- <div class="container">
+      <h3 class="sitename">Personal</h3>
+      <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
+      <div class="social-links d-flex justify-content-center">
+        <a href=""><i class="bi bi-twitter-x"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-skype"></i></a>
+        <a href=""><i class="bi bi-linkedin"></i></a>
+      </div> -->
+      <div class="container">
+        <div class="copyright">
+          <span>Copyright ©</span><strong class="px-1 sitename">Ranish</strong>
+          <p>
+            <span>Last Updated on </span> <strong>19 NOV 2023</strong>
+          </p>
+        </div>
+        <!-- <div class="credits"> -->
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you've purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+          <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+        <!-- </div> -->
+      </div>
+    </div>
+  </footer>
+  <!-- Scroll to Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/purecounterjs@1.0.1/dist/purecounter_vanilla.js"></script>
+  <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
