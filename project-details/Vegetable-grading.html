@@ -75,8 +75,8 @@
       <div class="container">
         <div class="row d-flex justify-content-center text-justify">
           <div class="col-lg-10">
-            <h1>Visual SLAM: Mapping & Localization of Mobile Robots</h1>
-            <p>Utilizing monocular cameras and ROS for robust mapping and precise localization.</p>
+            <h1>Grading Machine Innovation Challange</h1>
+            <p>Grading size and Quality of Local Tomatos cultivated in Eastern Hills of Nepal </p>
           </div>
         </div>
       </div>
@@ -85,7 +85,7 @@
           <ol>
             <li><a href="../index.html">Home</a></li>
             <li><a href="../projects.html">Projects</a></li>
-            <li class="current">V-SLAM</li>
+            <li class="current">Grading Machine</li>
           </ol>
         </div>
       </nav>
@@ -99,7 +99,7 @@
           <!-- Left Column -->
           <div class="col-lg-8">
             <div class="portfolio-image-container">
-              <img src="../assets/img/Robot.png" alt="Robot" class="project-image">
+              <img src="../assets/img/grading_machine.png" alt="Grading_machine" class="project-image">
               
             </div>
           </div>
@@ -116,8 +116,8 @@
               <ul>
                 <!-- <li><strong>Category:</strong> Robotics</li> -->
                 <!-- <li><strong>Date:</strong> March 2023</li> -->
-                <li><strong>Keywords:</strong> Robot Perception,Machine Vision, Active Perception, ROS2,  Sensor Interfacing</li>
-                <li><strong>Supervisor & Mentor: </strong> <a href = "https://scholar.google.com/citations?user=SbeycRIAAAAJ&hl=en&authuser=1 ">Asst. Prof. Manoj Kumar Guragai</a></li>
+                <li><strong>Keywords:</strong> Tomato grading, Machine Vision, Machine Learning, Slope & Divergence</li>
+                <!-- <li><strong>Supervisor & Mentor: </strong> <a href = "https://scholar.google.com/citations?user=SbeycRIAAAAJ&hl=en&authuser=1 ">Asst. Prof. Manoj Kumar Guragai</a></li> -->
                 <li><strong>Team:</strong> 
                  <li><a href="../index.html">Ranish Devkota</a>,  
                   <a href="https://gokarnabaskota.com.np">Gokarna Baskota</a>, 
@@ -136,55 +136,73 @@
           <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
             <h2>Project Overview</h2>
             <p>
-              This project focuses on implementing V-slam algorothm with monocular usb camera. Project relays on Keyframe extraction as well differentials in features among adjacent features with Bundle Adjustment using the Stella VSLAM algorithm and 
-             ROS2. The Computational Offloading had been featured implementing Robot end node as well as computer end node while 
-             Raspberry pi as well as arduino was used for robot control and Ros2 implementations.
+              This project was developed in collaboration with the support of <strong href="https://www.swisscontact.org/en/countries/nepal">swisscontact(Sahaj) </strong>
+              Project and DELTA 3.0 at the Institute of Engineering, Purwanchal Campus. The Project aims to grade the spherical vegetables(Tomatoes).
+              Grading is multistepped process where Size, and Quality are to be graded.The system combines 
+              computer vision and mechanical systems to automate the categorization of vegetables based on their size and ripeness.
             </p>
           </div>
-          <h2>Explanation</h2>
+          <h2>Methodology</h2>
+          The Grading machine is roughly divided in 2 modules or category
           <p>
-            V-SLAM (Visual Simultaneous Localization and Mapping) is a technique that allows a robot to build a map of its environment 
-            while simultaneously localizing itself within that map. This project utilized a monocular camera to capture visual data, 
-            which was processed in real-time using the Stella VSLAM algorithm integrated with ROS2. The algorithm works by feature extraction 
-            of keyframes and change in keyframes in adjustant images coupled with Bundle adjustjment for mapping via single Monocular camera.
-            <figure>
-              <img src="../assets/img/stella_vslam_flowchart.png" alt="VSLAM" title="Stella V-SLAM algorithm" class="project-image">
-              <figcaption>Robot-vslam Implementation </figcaption>
-            </figure>
+            <li> Size Grading </li> This is first and primary stage of grading. in this stage the tomatoes are graded on the basis of their sizes.
+            The hopper had been desiged for ensuring the height as well control of tomato to grader. Gravity seperation with slope and divergence is applied.
+            multiple guides with gradual increase in seperation coupled with optimal  slope that allows tomato to fall at controlled rate would segregate the 
+            tomatoes on based of size. 3 Sizes had been standarized after market studying and their demand in different industry from ketchup, salad to normal consumptions.
 
-            The chosen Visual SLAM algorithm, <strong>Stella Vslam</strong>, is employed to enable the robot to autonomously navigate and understand its environment.
-             The algorithm extracts distinctive visual features from the monocular camera images, tracks them across consecutive frames, and concurrently 
-             constructs a map of the surroundings. Simultaneously, it estimates the robot's pose in real-time, providing accurate localization information. 
-             This approach is particularly advantageous for mobile robots operating in diverse and dynamic environments where traditional mapping and localization methods might be limited.
               
           </p>
-        </div>
-
-        <!-- Methodology Section -->
-        <div class="project-details" data-aos="fade-up" data-aos-delay="600">
-          <h2>Methodology</h2>
-          <figure>
-          <img src="../assets/img/Working of mobile robot.png" alt="Working Overview" class="project-image">
-            <figcaption>Working of Mobile Robot</figcaption>
-        </figure>
           <p>
-            The project followed these key steps:
+            
+            These size grading proved effective means to segrgrate the farmers collection in the collection centre of these region in Eastern Hills, However 
+            The grading often have to come with the quality. 
+            for quality , the ripeness is to be determined and for this purpose Computer Vision had been used as premodel of Cyber-physical System in Agriculture production
           </p>
-          
-            <li> Configured a four-wheeled differential drive robot equipped with a monocular USB camera.</li>
-            <li> Integrated the Stella VSLAM algorithm with ROS to process visual data and extract features.</li>
-            <li> Implemented motion estimation and map generation through real-time feature matching and pose calculation.</li>
-            <li> Calibrated the camera for accurate depth perception and reduced distortion.</li>
-          
-          <div class="col-lg-8">
+          <p>
+            <li> Quality Grading with Machine Vision & Learning </li>
+            For Quality Grading, The Different approach had been used. Two of  most advanced techniques had been used namely <strong>Machine Vision & Machine Learning</strong>
+            The samples are captured with the USB Camera from Raspberry-Pi. samples are then annotated with reflection, rotation, Zoom, and shearing to generate the enough number 
+            of images for the Machine Learning algorithm to be deployed.
+            <div class="row gy-4">
+              <div class="col-lg-4">
+                <div class="portfolio-image-container">
+                  <figure>
+                  <img src="../assets/img/Defective_model-1.jpg" alt="Features" class="project-image">
+                  <figcaption>Defective Sample image</figcaption>
+                </figure>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="portfolio-image-container">
+                  <figure>
+                  <img src="../assets/img/Ripe-1.jpg" alt="Localization Results" class="project-image">
+                  <figcaption>Riped Sample image</figcaption>
+                </figure>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="portfolio-image-container">
+                  <figure>
+                  <img src="../assets/img/unripe-2.jpg" alt="Localization Results" class="project-image">
+                  <figcaption>unriped Sample image</figcaption>
+                </figure>
+                </div>
+              </div>
+            </div>
+          </p>
+          <p>
+            The images then used to train a network that leverages the <strong>Transfer Learning</strong> from MobileNet V2 which shall 
+            help train the network on the foundations of images followed by average pooling. The base model thus prepared is coupled with 
+            dense layers of neural neteorks of 512, 1024, 512 neurons consecutively of each having activation function as <strong>ReLU</strong>
+            and optimizer being <strong>Adam</strong>. The network was trained for 10 epoch obtaining accuracy of 0.975 (Normalized to 1) and 
+            thus obtained model had been saved for deployment.
             <div class="portfolio-image-container">
               <figure>
-              <img src="../assets/img/Callibrated_image.png" alt="Mapping" class="robot-image"> 
-              <figcaption>Camera Callibration technique </figcaption>  
-            </figure>         
+              <img src="../assets/img/download (2).png" alt="Localization Results" class="project-image">
+              <figcaption>Accuracy & Losses over the epochs</figcaption>
+            </figure>
             </div>
-          </div>
-
+          </p>
         </div>
 
         <!-- Results Section -->
@@ -194,43 +212,33 @@
           <div class="col-lg-6">
             <div class="portfolio-image-container">
               <figure>
-              <img src="../assets/img/feature_extraction_for_mapping (1).png" alt="Features" class="project-image">
-              <figcaption>Features Extraction</figcaption>
+              <img src="../assets/img/ripe_20241129_205558.jpg" alt="Features" class="project-image">
+              <figcaption>Ripe with Masks</figcaption>
             </figure>
             </div>
           </div>
           <div class="col-lg-6">
             <div class="portfolio-image-container">
               <figure>
-              <img src="../assets/img/localization.png" alt="Localization Results" class="project-image">
-              <figcaption>Mapping & Localization</figcaption>
+              <img src="../assets/img/unripe_20241129_204912.jpg" alt="Localization Results" class="project-image">
+              <figcaption>Unripe with Masks</figcaption>
             </figure>
             </div>
           </div>
         </div>
           <p>
-            The robot successfully mapped indoor environments with significant accuracy. The Localization had been performed in mapped environment as well as 
-            capable of performing SLAM taskes with single camera. The system demonstrated minimal drift 
-            and robust performance in dynamic conditions, such as changing lighting and obstacles.
+            The model was then used along with implementing RGB Masks highlighting areas after as well as categorizing 
+            the tomato quality. The model was deployed in cloud whereas real time picture is captured by the camera and fed to network
+            leveraging the computational offloading and provide results. 
           </p>
         </div>
-        <!-- Key Findings Section -->
-        <div class="project-details" data-aos="fade-up" data-aos-delay="500">
-          <h2>Key Findings</h2>
-          
-            <li>Monocular cameras provide a cost-effective alternative to expensive LIDAR sensors for SLAM applications.</li>
-            <li>The Stella VSLAM algorithm demonstrated high robustness in both textured and texture-less environments.</li>
-            <li>ROS integration allowed efficient processing and visualization using RViz.</li>
-        
-        </div>
-        <!-- Conclusion Section -->
         <div class="project-details" data-aos="fade-up" data-aos-delay="800">
           <h2>Conclusion</h2>
           <p>
-            This V-SLAM implementation proved effective for autonomous mobile robots, offering a cost-efficient alternative to traditional 
-            LIDAR-based systems. Future improvements includes
-            <li> integrating stereo cameras for depth perception</li>
-            <li>Sensor Fusion such as IMUS as well as GPS</li> 
+            This Grading machine was first prototype that requires lots of iteration. key takeouts are quality and Size Grading coupled with Machine Vision & 
+            Edge computing. However improvements can be made in all the sectors as
+            <li> Automation in quality and size grading as integrated unit</li>
+            <li> Deployment of model at Embeddeds and Model optimization for more real time operations.</li> 
           </p>
         </div>
       </div>

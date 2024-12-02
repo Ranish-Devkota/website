@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Autonomous Mobile robot</title>
+  <meta name="description" content="Detailed explanation, findings, methodologies, and conclusions of the V-SLAM project.">
+  <meta name="keywords" content="V-SLAM, Robotics, Localization, Mapping, Monocular Camera, ROS">
+
+  <!-- Favicons -->
+  <link href="../assets/img/logo.png" rel="icon">
+  <link href="../assets/img/logo.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="../assets/css/main.css" rel="stylesheet">
+  <style>
+    .project-image {
+      width: 100%;
+      height: 100%;
+      max-height: 300px; /* Adjust height as needed */
+      object-fit: contain;
+      margin-bottom: 20px;
+    }
+    .robot-image {
+      width: auto;
+      height: 80%;
+      max-height: 300px; /* Adjust height as needed */
+      object-fit: contain;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body class="portfolio-details-page">
+  <!-- <script src="https://cdn.jsdelivr.net/npm/purecounterjs@1.0.1/dist/purecounter_vanilla.js"></script> -->
+
+
+  <!-- Header -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <a href="../index.html" class="logo d-flex align-items-center">
+        <img src="../assets/img/logo.png" alt="">
+        <!-- <h1 class="sitename">VSLAM</h1> -->
+      </a>
+      <!-- <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../projects.html" class="active">Projects</a></li>
+          <li><a href="../publications.html">Publications</a></li>
+          <li><a href="../gallery.html">Gallery</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav> -->
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="container">
+        <div class="row d-flex justify-content-center text-justify">
+          <div class="col-lg-10">
+            <h1>Autonomous Maze Solver </h1>
+            <p>Mobile robot solving wall maze & Line Maze along with relying QR info to Base </p>
+          </div>
+        </div>
+      </div>
+      <nav class="breadcrumbs">
+        <div class="container">
+          <ol>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../projects.html">Projects</a></li>
+            <li class="current">Maze Solver</li>
+          </ol>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+
+          <!-- Left Column -->
+          <div class="col-lg-8">
+            <div class="portfolio-image-container">
+              <img src="../assets/img/yantra-bot.jpg" alt="yantra-bot" class="project-image">
+              
+            </div>
+          </div>
+          <!-- <div class="col-lg-4">
+            <div class="portfolio-image-container">
+              <img src="../assets/img/robot_model.png" alt="Mapping" class="robot-image">            
+            </div>
+          </div> -->
+          
+          <!-- Right Column -->
+          <div class="col-lg-4">
+            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+              <h3>Project Information</h3>
+              <ul>
+                <!-- <li><strong>Category:</strong> Robotics</li> -->
+                <!-- <li><strong>Date:</strong> March 2023</li> -->
+                <li><strong>Keywords:</strong> Sensor Fusion, Machine Vision, Machine Learning, Multi-processor Robot</li>
+                <!-- <li><strong>Supervisor & Mentor: </strong> <a href = "https://scholar.google.com/citations?user=SbeycRIAAAAJ&hl=en&authuser=1 ">Asst. Prof. Manoj Kumar Guragai</a></li> -->
+                <li><strong>Team:</strong> 
+                 <li><a href="../index.html">Ranish Devkota</a>,  
+                  <a href="https://gokarnabaskota.com.np">Gokarna Baskota</a>, 
+                  <a href=" ">Sushan Kattel</a>,
+                  <a href=" ">Dipesh Rijal</a>,
+                 <a href = " ">Sudes Mate</a></li>
+                </li>
+                <h4>Facility used: <a href = "https://robotics.ioepc.edu.np">Robotics club</a></h4>
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+
+        <!-- Explanation Section -->
+        <div class="project-details" data-aos="fade-up" data-aos-delay="400">
+          <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+            <h2>Project Overview</h2>
+            <p>
+                This Project was  developed as Yantra's Automatic Akhada theme in 2019-20. The Two stroyed robot was 
+                designed with problems to solve of Multicolored-line Maze solving which shall have a QR on the correct
+                path. This is to be captured and decoded by real time on board MCU & Rely to base. The maze shall lead 
+                to the wall Maze. Wall maze features direction symbols which to be followed leads to centre containing flame 
+                symbol.
+            </p>
+          </div>
+          <h2>Methodology</h2>
+          <p>
+            The  Robot functioning shall be categorized on 2 major part
+            <li> Line Maze Solver </li> This is first and primary stage. In this stage,
+            LSA-08 Line sensor was used. The maze had 3 entry point which are randomized during the start of game by organizer.
+            Robot then shall proceed with the left hand algorithm which will lead to the wall Maze.
+
+            
+
+
+              
+          </p>
+          <p>
+            
+            PID was implemented for smooth and proper functioning of robot during following tasks leading to 
+            omit overshoot and seemlessly transistion during change in color of line and addition of multiple
+            sensor which shall on /off during transistion such as in between wall maze & line maze transistion to
+            ultrasonic sensor from LSA.
+
+          </p>
+          <p>
+            <li> Wall Maze and Direction Following </li>
+            For Solving Wall Maze, The vertical slicing of image followed by pixel count is done determining 
+            the direction to be followed by Raspberry-pi. ultrasonic sensor determine safe distance as well 
+            speed to move via PID.
+        </div>
+
+       
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+    <!-- <div class="container">
+      <h3 class="sitename">Personal</h3>
+      <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
+      <div class="social-links d-flex justify-content-center">
+        <a href=""><i class="bi bi-twitter-x"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-skype"></i></a>
+        <a href=""><i class="bi bi-linkedin"></i></a>
+      </div> -->
+      <div class="container">
+        <div class="copyright">
+          <span>Copyright ©</span><strong class="px-1 sitename">Ranish</strong>
+          <p>
+            <span>Last Updated on </span> <strong>19 NOV 2023</strong>
+          </p>
+        </div>
+        <!-- <div class="credits"> -->
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you've purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+          <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+        <!-- </div> -->
+      </div>
+    </div>
+  </footer>
+  <!-- Scroll to Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/purecounterjs@1.0.1/dist/purecounter_vanilla.js"></script>
+  <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
