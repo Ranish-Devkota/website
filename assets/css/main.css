@@ -703,6 +703,40 @@ section,
   object-fit: cover;
   z-index: 1;
 }
+.hcontent {
+  z-index: 2; /* Place the text above the overlay */
+  text-align: justify;
+  margin-top: 3.5cm;
+  margin-right: 5cm;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  background-color: color-mix(in srgb, var(--default-color), transparent 95%);
+  /* padding: 20px; */
+
+}
+
+
+
+.content {
+  z-index: 2; /* Place the text above the overlay */
+  text-align: center;
+  
+  line-height: 1.6;
+  /* background-color: color-mix(in srgb, var(--default-color), transparent 95%); */
+  padding: 20px;
+
+}
+
+.content h2 {
+  font-size: 20px;
+  margin-bottom: 2px;
+  
+}
+
+.content p {
+  font-size: 20 px;
+  margin-bottom: 2px;
+}
 
 .hero .container {
   position: relative;
@@ -717,7 +751,7 @@ section,
 
 .hero p {
   margin: 5px 0 0 0;
-  font-size: 26px;
+  font-size: 20px;
 }
 
 .hero p span {
@@ -753,7 +787,25 @@ section,
   }
 
   .hero p {
-    font-size: 20px;
+    font-size: 15px;
+  }
+  .hero img {
+    object-fit: contain;
+    background-color: #000000;
+  }
+  .content {
+    padding: 10px;
+    margin-top: 20px;
+    margin-right: 20px;
+    background-color: color-mix(in srgb, var(--default-color), transparent 90%);
+  }
+
+  .content h1 {
+    font-size: 24px;
+  }
+
+  .content p {
+    font-size: 16px;
   }
 }
 
